@@ -10,6 +10,7 @@ class SearchResult extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ListView.builder(
+        shrinkWrap: true,
         itemBuilder: (context, index) {
           final TourismPlace place = searchResult[index];
           return InkWell(
